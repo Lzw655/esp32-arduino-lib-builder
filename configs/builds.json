@@ -117,7 +117,7 @@
 		{
 			"target": "esp32s3",
 			"features":["esp_sr"],
-			"idf_libs":["qio","80m","qio_ram"],
+			"idf_libs":["qio","120m_perf","opi_ram_perf"],
 			"bootloaders":[
 				["qio","120m","qio_ram"],
 				["qio","80m","qio_ram"],
@@ -129,7 +129,9 @@
 				["dio","80m","qio_ram"],
 				["dio","80m","opi_ram"],
 				["opi","80m","opi_ram"],
-				["opi","80m","qio_ram"]
+				["opi","80m","qio_ram"],
+				["qio","120m","qio_ram_perf"],
+				["qio","120m_perf","opi_ram_perf"]
 			]
 		}
 	]
